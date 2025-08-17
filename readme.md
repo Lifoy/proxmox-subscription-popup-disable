@@ -90,7 +90,21 @@ With this Code
 systemctl restart pveproxy.service
 ```
 5. Done
-You Have made it :) 
+You Have made it :)
+
+```markdown
+⚠️ Important Note About Updates
+
+After updating Proxmox VE, the file:
+```
+
+```bash
+/usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+```
+
+may be overwritten by the update. This can cause the "No valid subscription" popup to reappear.
+
+If this happens, you will need to reapply the changes described in this guide. 
 
 
 
