@@ -1,4 +1,4 @@
-# Proxmox remove no-subscription message from ui
+# Proxmox Subscription Popup disable from ui
 
 If you have no subscription and visit the webinterface it will popup a no-subscription message  and you get warnings .  
 This Script will disable this popup .
