@@ -44,7 +44,7 @@ apt install --reinstall proxmox-widget-toolkit
 3. Then open the proxmoxlib.js at line 602 and Replace 
  ```bash
         checked_command: function (orig_cmd) {
-        Proxmox.Utils.API2Request({
+            Proxmox.Utils.API2Request({
                 url: '/nodes/localhost/subscription',
                 method: 'GET',
                 failure: function (response, opts) {
