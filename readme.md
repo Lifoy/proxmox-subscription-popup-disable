@@ -94,16 +94,16 @@ You Have made it :)
 
 
 ⚠️ Important Note About Updates
-```markdown
+
 After updating Proxmox VE, the file:
-```
+
 ```bash
 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 ```
-```markdown
+
 Nay be overwritten by the update. This can cause the "No valid subscription" popup to reappear.
 
 If this happens, you will need to reapply the changes described in this guide. 
-```
+
 
 
