@@ -1,10 +1,21 @@
-# Proxmox Subscription Popup disable from ui
-
 If you have no subscription and visit the webinterface it will popup a no-subscription message  and you get warnings .  
 This  will disable this popup .
 
 It Tested and works for: 
 * Proxmox Virtual Environment short PVE 9.0.5 on Debian 13 (Trixie)
+
+⚠️ Important Note About Updates
+
+After updating Proxmox VE, the file:
+
+```bash
+/usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
+```
+
+May be overwritten by the update. This can cause the "No valid subscription" popup to reappear.
+
+If this happens, you will need to reapply the changes described in this guide. 
+
 
 
 
@@ -90,19 +101,5 @@ systemctl restart pveproxy.service
 ```
 5. Done
 You Have made it :)
-
-
-⚠️ Important Note About Updates
-
-After updating Proxmox VE, the file:
-
-```bash
-/usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
-```
-
-May be overwritten by the update. This can cause the "No valid subscription" popup to reappear.
-
-If this happens, you will need to reapply the changes described in this guide. 
-
 
 
